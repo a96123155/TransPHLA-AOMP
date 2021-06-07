@@ -5,7 +5,7 @@
 pip install -r pHLAIformer_simple_requirements.txt
 pHLAIformer_simple_requirements.txt is a simplified version of the dependency package selected by the author. If the dependency package is not installed enough, you can check pHLAIformer_requirements.txt to check the version of the corresponding dependency package. The installation of pytorch needs to correspond to your system, GPU and other versions, please check https://pytorch.org/get-started/locally/, we are using GeForce RTX 3080 GPU and CUDA 11.1.
 
-2. Enter the current directory: cd ./TransPHLA/
+2. Enter the current directory: cd ./TransPHLA-AOMP/
 
 3. python pHLAIformer.py --peptide_file "peptides.fasta" --HLA_file "hlas.fasta" --threshold 0.5 --cut_length 10 --cut_peptide True --output_dir './results/' --output_attention True --output_heatmap True --output_mutation True
 
