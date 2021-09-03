@@ -96,7 +96,7 @@ with open(args.HLA_file, 'r') as f:
     HLA_file = f.readlines()
 	
 if len(peptide_file) != len(HLA_file):
-	log = Logger(errLogPath)
+        log = Logger(errLogPath)
     log.logger.critical('Please ensure the same number of HLAs and peptides.')
     sys.exit(0)
 	
@@ -122,8 +122,8 @@ for pep, hla_name, hla_seq in zip(ori_peptides, ori_HLA_names, ori_HLA_sequences
         continue
     if len(set(hla_seq).difference(set('ARNDCQEGHILKMFPSTWYV'))) != 0:
         continue
-	if len(hla_seq) > 34:
-		continue
+        if len(hla_seq) > 34:
+            continue
     length = len(pep)
     if length < 15:
         if args.cut_peptide:
