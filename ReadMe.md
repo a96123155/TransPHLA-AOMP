@@ -23,9 +23,7 @@ pHLAIformer_simple_requirements.txt is a simplified version of the dependency pa
 
 (1) Instructions to run on data:
 
-- Code: python pHLAIformer.py --peptide_file "peptides.fasta" --HLA_file "hlas.fasta" --threshold 0.5 --cut_length 10 --cut_peptide True --output_dir './results/' -
-
--output_attention True --output_heatmap True --output_mutation True
+- Code: python pHLAIformer.py --peptide_file "peptides.fasta" --HLA_file "hlas.fasta" --threshold 0.5 --cut_length 10 --cut_peptide True --output_dir './results/' --output_attention True --output_heatmap True --output_mutation True
 
 - Webserver: click the Example button on the https://issubmission.sjtu.edu.cn/TransPHLA-AOMP/index.html and click the submit button. 
 
